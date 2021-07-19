@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.419">
-<testcase classname="Login" name="To Login with valid input" time="16.126">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.567">
+<testcase classname="Login" name="To Login with valid input" time="19.079">
 <system-out><![CDATA[Given I enter valid Url.....................................................passed
 When I enter valid UserName "Admin".........................................passed
 And I enter valid Password "admin123".......................................passed
