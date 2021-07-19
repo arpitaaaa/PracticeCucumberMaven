@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-19T07:36:12.978Z",
+        "line": 3,
+        "name": "To Login with valid input",
+        "description": "",
+        "id": "login;to-login-with-valid-input",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7463000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter valid Url",
+            "match": {
+              "location": "StepDefinition.login.i_enter_valid_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 206000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid UserName \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.login.i_enter_valid_user_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid Password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.login.i_enter_valid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3770000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click Submit",
+            "match": {
+              "location": "StepDefinition.login.click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cWelcome [Nishanth05]\u003e but was:\u003cWelcome [Paul]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat StepDefinition.login.i_should_see_user_name_as(login.java:40)\r\n\tat ✽.I should see user name as \"Welcome Nishanth05\"(file:///C:/Automation/SDET/mvn/src/test/resources/FeatureFiles/login.feature:9)\r\n",
+              "duration": 52000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I should see user name as \"Welcome Nishanth05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome Nishanth05\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.login.i_should_see_user_name_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/login.feature",
+    "tags": []
+  }
+]
